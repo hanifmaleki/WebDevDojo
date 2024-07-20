@@ -1,0 +1,22 @@
+doctype html
+html(lang=en)
+    head
+        title "WebDevDojo"
+        link(rel="stylesheet" href="./css/style.css")
+    body
+        header
+            div(class='header')
+                h1 WebDevDojo
+
+        main(id="top")
+            div(class='sidebar')
+                ul
+                    li: a(href='index.html') Home
+
+            div(class='main')
+                block main
+
+        footer
+         div(class='footer')
+            a(href='#top') top
+            p Copyright &copy; Hanif 2024

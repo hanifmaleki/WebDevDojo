@@ -1,0 +1,6 @@
+{
+  "watch": ["app.js", "src/**"],  
+  "ext": "js,scss,pug",
+  "ignore": ["node_modules/", "public/**"], 
+  "verbose": true            
+}

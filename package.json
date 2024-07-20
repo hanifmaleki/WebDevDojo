@@ -1,0 +1,27 @@
+{
+  "name": "webdevdojo",
+  "version": "1.0.0",
+  "description": "Mastering the Modern Web Stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "javascript",
+    "pug",
+    "SCSS"
+  ],
+  "author": "Hanif",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3",
+    "sass": "^1.77.8"
+  }
+}

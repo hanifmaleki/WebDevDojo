@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+%c3-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px 0;
+  color: $gray;
+}
+.c3-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  width: 280px;
+  margin-bottom: 5px;
+}
+
+.c3-stats {
+  @extend %c3-text;
+}
+
+
+.c3-author {
+  @extend %c3-text;
+}
+
+.c3-description { 
+  @extend %c3-text;
+  width: 280px;
+  margin-bottom: 100px;
+}
+
+
+.c3-red-bg-text {
+  @extends %c3-text;
+  color: $white;
+  background-color: $cinnabar;
+  text-align: center;
+  padding: 18px 0;
+
+  .c3-hover-underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+

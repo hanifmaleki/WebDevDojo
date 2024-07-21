@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+%c1-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+}
+
+.c1-red-button {
+  @extend %c1-button;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+}
+
+.c1-blue-white-button {
+  @extend %c1-button;
+  background-color: $white;
+  border-color: $blue;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.c1-white-blue-button {
+  @extend %c1-button;
+  background-color: $cyan;
+  color: $white;
+  border-radius: 17px;
+  font-weight: bold;
+  font-size: 15px;
+}

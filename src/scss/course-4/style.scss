@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.c4-searchbar {
+  display: block;
+}
+
+.c4-video-preview {
+  display: inline-block;
+  width:300px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.c4-thumbnail {
+  width: 300px;
+  display: block;
+}
+
+.video-author, .video-stats {
+  display: inline-block;
+}
+
+.c4-video-title {
+  
+}
+

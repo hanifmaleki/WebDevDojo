@@ -1,0 +1,34 @@
+extends ../layout.pug
+
+block importStyles
+    link(rel="stylesheet" href='../css/style.css')
+
+block main
+    input(class='c4-searchbar', type='text', placeholder='Search')
+
+    div(class='c4-video-preview')
+
+        img(class='c4-thumbnail', src='../assets/thumbnail-1.webp')
+
+        p(class='c4-video-title')
+            | Talking <strong>and AI with</strong> Google CEO Sundar Pichai!
+
+        p
+            | Marques Brownlee
+
+        p
+            | 3.4M views &#183; 6 months ago
+    
+    div(class='c4-video-preview')
+
+        img(class='c4-thumbnail', src='../assets/thumbnail-2.webp')
+
+        p(class='c4-video-title')
+            | Try Not To Laugh Challenge #9
+
+        p
+            | Markiplier
+
+        p
+            | 19M views &#183; 4 years ago
+    

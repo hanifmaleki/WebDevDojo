@@ -5,7 +5,29 @@ block importStyles
     link(rel="stylesheet" href='../css/style.css')
 
 block main
-    input(class='c6-searchbar', type='text', placeholder='Search')
+    p= __dirname
+    div(class='c7-header')
+        div(class='c7-header-left-section')
+            img(class='c7-header-hamburger' src='../assets/icons/hamburger-menu.svg')
+            img(class='c7-header-youtube-logo' src='../assets/icons/youtube-logo.svg')
+        
+        div(class='c7-header-middle-section')
+            input(class='c7-searchbar', type='text', placeholder='Search')
+
+            button(class='c7-search-button')
+                img(class='c7-search-icon' src='../assets/icons/search.svg')
+            
+            button(class='c7-voice-search-button')
+                img(class='c7-voice-icon' src='../assets/icons/voice-search-icon.svg')
+        
+        div(class='c7-header-right-section')
+            img(class='c7-header-upload-icon' src='../assets/icons/upload.svg')
+            
+            img(class='c7-header-youtube-apps-icon' src='../assets/icons/youtube-apps.svg')
+
+            img(class='c7-header-notification-icon' src='../assets/icons/notifications.svg')
+            
+            img(class='c7-header-user-icon' src='../assets/channel-pictures/my-channel.jpeg')
 
     - 
         const videos = [ 
@@ -53,7 +75,7 @@ block main
             }
         ]
 
-    div(class='c6-video-grid')
+    div(class='c7-video-grid')
         each video in videos
             +video-preview(video)
     

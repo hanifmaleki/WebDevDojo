@@ -1,0 +1,156 @@
+@import '../variables.scss';
+
+.c7-header {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  justify-content: space-between;
+}
+
+.c7-header-left-section {
+  display: flex;
+  align-items: center;
+}
+
+.c7-header-middle-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 500px;
+}
+
+.c7-search-button {
+  height: 40px;
+  width: 66px;
+  background-color: $gallery;
+  border: 1px solid $scorpion; 
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.c7-voice-search-button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: $wild-sand;
+}
+
+.c7-search-icon {
+  height: 25px;
+  margin: auto;
+}
+
+.c7-voice-icon {
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+}
+
+.c7-header-youtube-logo,
+.c7-header-hamburger {
+  height: 24px;
+  margin: 0 12px;
+}
+
+.c7-searchbar {
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid $scorpion;
+  height: 36px;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px $black-super-fade;
+  width: 0;
+
+  &::placeholder { 
+    font-size: 16px;
+  }
+}
+
+.c7-header-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.c7-header-upload-icon {
+  height: 24px;
+}
+
+.c7-header-youtube-apps-icon {
+  height: 24px;
+}
+
+.c7-header-notification-icon {
+  height:24px;
+}
+
+.c7-header-user-icon {
+  height: 32px;
+  border-radius: 16px;
+}
+
+
+%c7-p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c7-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.c7-video-preview {
+}
+
+.c7-thumbnail-row {
+  margin-bottom: 12px;
+}
+
+.c7-video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.c7-video-author,
+.c7-video-stats {
+  @extend %c7-p;
+  font-size: 12px;
+  color: $scorpion; 
+}
+
+.c7-video-author {
+  margin-bottom: 4px;
+}
+
+.c7-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.c7-video-title {
+  @extend %c7-p;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.c7-video-info {
+}
+
+.c7-avatar-container {
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.c7-avatar-image {
+  width: 40px;
+  border-radius: 50px;
+}

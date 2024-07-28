@@ -16,7 +16,7 @@
 .c1-blue-white-button {
   @extend %c1-button;
   background-color: $white;
-  border-color: $blue;
+  border-color: $science-blue;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -25,7 +25,7 @@
 
 .c1-white-blue-button {
   @extend %c1-button;
-  background-color: $cyan;
+  background-color: $dodger-blue;
   color: $white;
   border-radius: 17px;
   font-weight: bold;

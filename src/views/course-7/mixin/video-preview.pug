@@ -1,0 +1,17 @@
+mixin video-preview(video)
+    div(class='c7-video-preview')
+        div(class='c7-thumbnail-row')
+            img(class='c7-thumbnail', src=video.thumb)
+
+        div(class='c7-video-info-grid')
+            div(class='c7-avatar-container')
+                img(class='c7-avatar-image', src=video.avatar)
+            
+            div(class='c7-video-info')
+
+                p(class='c7-video-title') !{video.title}
+
+                p(class='c7-video-author') !{video.author}
+
+                p(class='c7-video-stats') !{video.stats}
+

@@ -26,15 +26,15 @@
 .c2-blue-white-button {
   @extend %c2-button;
   background-color: $white;
-  border-color: $blue;
-  color: $blue;
+  border-color: $science-blue;
+  color: $science-blue;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
 
   &:hover {
-    background-color: $blue;
+    background-color: $science-blue;
     color: $white;
   } 
 
@@ -45,7 +45,7 @@
 
 .c2-white-blue-button {
   @extend %c2-button;
-  background-color: $cyan;
+  background-color: $dodger-blue;
   color: $white;
   border-radius: 17px;
   font-weight: bold;

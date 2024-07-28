@@ -24,7 +24,7 @@ main, header, aside, footer {
 .sidebar {
   grid-area: sb;
   min-width: 250px;
-  background-color: $steelblue;
+  background-color: $steel-blue;
   border-radius: 15px;
   padding: 10px;
   color: $white;
@@ -45,7 +45,7 @@ main, header, aside, footer {
 
 .header {
   grid-area: hd;
-  background-color: steelblue;
+  background-color: $steel-blue;
   color: $white;
   align-content: center;
   text-align: center;
@@ -62,7 +62,7 @@ main, header, aside, footer {
   display: flex;
   grid-area: ft;
   padding: 1rem;
-  background-color: $steelblue;
+  background-color: $steel-blue;
   color: $white;
   justify-content: space-between;
   align-items: center;

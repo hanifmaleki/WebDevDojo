@@ -1,0 +1,19 @@
+@import '../variables.scss';
+@import './header.scss';
+@import './video-preview.scss';
+@import './sidebar.scss';
+
+%c8-p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c8-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+

@@ -11,25 +11,61 @@ html(lang=en)
         header
             div(class='header')
                 h1 WebDevDojo
+
         -
-            const menus = [
+            const modules = [
                 {
-                    name: '',
-                    address: ''
+                    name: 'Home',
+                    address: '/index.html',
+                    description: 'Project Home'
+                },
+                {
+                    name: 'Course-1 Introduction',
+                    address: 'course-1/index.html',
+                    description: 'First Page'
+                },
+                {
+                    name: 'Course-2 CSS Beautiful Bottons',
+                    address: 'course-2/index.html',
+                    descrotption: 'Buttons, Colors'
+                },
+                {
+                    name: 'Course-3 Text Styling',
+                    address: '/index.html',
+                    descrotption: 'Introduction to Text'
+                },
+                {
+                    name: 'Course-4 Youtube(1)',
+                    address: 'course-4/index.html',
+                    description: 'Basic Layout'
+                },
+                {
+                    name: 'Course-5 Youtube(2)',
+                    address: 'course-5/index.html',
+                    descrotption: 'Inline-Block Border-Radius'
+                },
+                {
+                    name: 'Course-6 Youtube(3)',
+                    address: 'course-6/index.html',
+                    description: 'Grid Layout'
+                },
+                {
+                    name: 'Course-7 Youtube(4)',
+                    address: 'course-7/index.html',
+                    description: 'Grid Layout'
+                },
+                {
+                    name: 'Course-8 Youtube(5)',
+                    address: 'course-8/index.html',
+                    description: 'Absolute, Relative, Fixed Positioning',
                 }
             ]
 
         main(id="top")
             div(class='sidebar')
                 ul
-                    li: a(href='/index.html') Home
-                    li: a(href='/course-1/index.html') Course-1 Introduction
-                    li: a(href='/course-2/index.html') Course-2 Beautiful Buttons
-                    li: a(href='/course-3/index.html') Course-3 CSS Styling Texts
-                    li: a(href='/course-4/index.html') Course-4 My Youtube-1
-                    li: a(href='/course-5/index.html') Course-5 My Youtube-2
-                    li: a(href='/course-6/index.html') Course-6 My Youtube-3
-                    li: a(href='/course-7/index.html') Course-7 My Youtube-4
+                    each module in modules
+                        li: a(href=module.address alt=module.description) #{module.name} 
 
             div(class='main')
                 block main

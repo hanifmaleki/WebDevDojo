@@ -3,19 +3,24 @@ const fs = require('fs')
 const debug = require('debug')('app:assetLoader')
 
 function cleanOutputDir(outputDir) {
-   debug(`Cleaning ${outputDir}`)
+    if (!fs.existsSync(outputDir)) {
+        debug(`Directory ${outputDir} does not exist. Nothing to clean`)
+        return
+    }
 
-   const entries = fs.readdirSync(outputDir)
-   for (const entry of entries) {
-       const filePath = path.join(outputDir, entry)
-       const stats = fs.statSync(filePath)
+    debug(`Cleaning ${outputDir}`)
 
-       if (stats.isDirectory()) {
-           cleanOutputDir(filePath)
-           fs.rmdirSync(filePath)
-       } else {
-           fs.unlinkSync(filePath)                
-       }
+    const entries = fs.readdirSync(outputDir)
+    for (const entry of entries) {
+        const filePath = path.join(outputDir, entry)
+        const stats = fs.statSync(filePath)
+
+        if (stats.isDirectory()) {
+            cleanOutputDir(filePath)
+            fs.rmdirSync(filePath)
+        } else {
+            fs.unlinkSync(filePath)                
+        }
     }
 }
 

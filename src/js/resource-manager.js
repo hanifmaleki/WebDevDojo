@@ -1,7 +1,7 @@
 const path = require('path')
 
 function getAsset(assetPath) {
-    return path.join('/asset', assetPath)
+    return path.join('/assets', assetPath)
 }
 
 function getMainStyle() {

@@ -6,7 +6,8 @@ const saasLoader = require('./src/js/saas-loader')
 const pugLoader = require('./src/js/pug-loader')
 const assetLoader = require('./src/js/asset-loader')
 const outputCleaner = require('./src/js/output-cleaner') 
-const moduleManager = require('./src/js/resource-manager')
+const resourceManager = require('./src/js/resource-manager')
+const moduleManager = require('./src/js/module-manager')
 
 const PORT = process.env.PORT || 3000
 const srcDir = path.join(__dirname, 'src')
@@ -22,8 +23,9 @@ const app = express()
 app.use(logger('dev'));
 
 appContext = {
-    'getAsset': moduleManager.getAsset,
-    'getMainStyle': moduleManager.getMainStyle,
+    'getAsset': resourceManager.getAsset,
+    'getMainStyle': resourceManager.getMainStyle,
+    'modules': moduleManager.getModules(),
 }
 
 outputCleaner.cleanOutputDir(outputDir)

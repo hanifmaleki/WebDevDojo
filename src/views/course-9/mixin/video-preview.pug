@@ -1,0 +1,18 @@
+mixin video-preview(video)
+    div(class='c8-video-preview')
+        div(class='c8-thumbnail-row')
+            img(class='c8-thumbnail', src=video.thumb)
+            div(class='c8-video-time') 14:22
+
+        div(class='c8-video-info-grid')
+            div(class='c8-avatar-container')
+                img(class='c8-avatar-image', src=video.avatar)
+            
+            div(class='c8-video-info')
+
+                p(class='c8-video-title') !{video.title}
+
+                p(class='c8-video-author') !{video.author}
+
+                p(class='c8-video-stats') !{video.stats}
+

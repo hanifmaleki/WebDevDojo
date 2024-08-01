@@ -6,60 +6,11 @@ html(lang=en)
         link(rel='preconnect', href='https://fonts.gstatic.com')
         link(href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', rel='stylesheet')
         block importStyles
-            link(rel="stylesheet" href="./css/style.css")
+            link(rel="stylesheet" href=getMainStyle())
     body
         header
             div(class='header')
                 h1 WebDevDojo
-
-        -
-            const modules = [
-                {
-                    name: 'Home',
-                    address: '/index.html',
-                    description: 'Project Home'
-                },
-                {
-                    name: 'Course-1 Introduction',
-                    address: 'course-1/index.html',
-                    description: 'First Page'
-                },
-                {
-                    name: 'Course-2 CSS Beautiful Bottons',
-                    address: 'course-2/index.html',
-                    descrotption: 'Buttons, Colors'
-                },
-                {
-                    name: 'Course-3 Text Styling',
-                    address: '/index.html',
-                    descrotption: 'Introduction to Text'
-                },
-                {
-                    name: 'Course-4 Youtube(1)',
-                    address: 'course-4/index.html',
-                    description: 'Basic Layout'
-                },
-                {
-                    name: 'Course-5 Youtube(2)',
-                    address: 'course-5/index.html',
-                    descrotption: 'Inline-Block Border-Radius'
-                },
-                {
-                    name: 'Course-6 Youtube(3)',
-                    address: 'course-6/index.html',
-                    description: 'Grid Layout'
-                },
-                {
-                    name: 'Course-7 Youtube(4)',
-                    address: 'course-7/index.html',
-                    description: 'Grid Layout'
-                },
-                {
-                    name: 'Course-8 Youtube(5)',
-                    address: 'course-8/index.html',
-                    description: 'Absolute, Relative, Fixed Positioning',
-                }
-            ]
 
         main(id="top")
             div(class='sidebar')

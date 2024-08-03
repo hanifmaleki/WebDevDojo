@@ -1,0 +1,12 @@
+extends ../layout.pug
+include mixin/video-preview
+
+block main
+    include header.pug
+
+    div(class='c8-sidebar')
+
+    div(class='c8-video-grid')
+        each video in youtubeData
+            +video-preview(video)
+    

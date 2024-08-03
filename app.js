@@ -8,6 +8,8 @@ const assetLoader = require('./src/js/asset-loader')
 const outputCleaner = require('./src/js/output-cleaner') 
 const resourceManager = require('./src/js/resource-manager')
 const moduleManager = require('./src/js/module-manager')
+const youtubeManager = require('./src/js/youtube-data')
+const timeHelper = require('./src/js/time-helper')
 
 const PORT = process.env.PORT || 3000
 const srcDir = path.join(__dirname, 'src')
@@ -25,7 +27,9 @@ app.use(logger('dev'));
 appContext = {
     'getAsset': resourceManager.getAsset,
     'getMainStyle': resourceManager.getMainStyle,
+    'formatSeconds': timeHelper.formatSeconds,
     'modules': moduleManager.getModules(),
+    'youtubeData': youtubeManager.getData(),
 }
 
 outputCleaner.cleanOutputDir(outputDir)

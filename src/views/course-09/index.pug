@@ -1,0 +1,35 @@
+extends ../layout.pug
+include mixin/video-preview
+
+block main
+    include header.pug
+
+    div(class='c9-sidebar')
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/home.svg'))
+            div Home
+
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/explore.svg'))
+            div Explore
+
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/subscriptions.svg'))
+            div Subscriptions
+
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/originals.svg'))
+            div Originals
+
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/youtube-music.svg'))
+            div YouTube Music
+
+        div(class='c9-sidebar-link')
+            img(src=getAsset('icons/library.svg'))
+            div Library
+
+    div(class='c9-video-grid')
+        each video in youtubeData
+            +video-preview(video)
+    

@@ -1,0 +1,10 @@
+extends ../layout.pug
+include mixin/video-preview
+
+block main
+    input(class='c6-searchbar', type='text', placeholder='Search')
+
+    div(class='c6-video-grid')
+        each video in youtubeData
+            +video-preview(video)
+    

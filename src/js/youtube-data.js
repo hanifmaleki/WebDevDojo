@@ -50,6 +50,54 @@ function getData() {
             avatar: resourceManager.getAsset('channel-pictures/channel-6.jpeg'),
             duration: 1199
         },
+        {
+            title: "Why Planes Don't Fly Over Tibet",
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-7.webp'),
+            author: 'RealLifeLore',
+            stats: '6.6M views &#183; 1 year ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-7.jpeg'),
+            duration: 613,
+        },
+        {
+            title: "Inside The World's Biggest Passenger Plane",
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-8.webp'),
+            author: 'Tech Vision',
+            stats: '3.7M views &#183; 10 months ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-8.jpeg'),
+            duration: 432,
+        },
+        {
+            title: 'The SECRET to Super Human STRENGTH',
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-9.webp'),
+            author: 'ThenX',
+            stats: '20M views &#183; 3 years ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-9.jpeg'),
+            duration: 797,
+        },
+        {
+            title: "How The World's Largest Cruise Ship Makes 30,000 Meals Every Day",
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-10.webp'),
+            author: 'Business Insider',
+            stats: '14M views &#183; 1 years ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-10.jpeg'),
+            duration: 473,
+        },
+        {
+            title: "Dubai's Crazy Underwater Train and Other Things #Only in Dubai",
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-11.webp'),
+            author: 'Destination Tips',
+            stats: '3M views &#183; 1 years ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-11.jpeg'),
+            duration: 250,
+        },
+        {
+            title: "What would happen if you didn’t drink water? - Mia Nacamulli",
+            thumb: resourceManager.getAsset('thumbnails/thumbnail-12.webp'),
+            author: 'Business Insider',
+            stats: '12M views &#183; 5 years ago',
+            avatar: resourceManager.getAsset('channel-pictures/channel-12.jpeg'),
+            duration: 291,
+        },
     ]
 }
 

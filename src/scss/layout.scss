@@ -22,12 +22,14 @@ main, header, aside, footer {
 }
 
 .sidebar {
+  position: relative;
   grid-area: sb;
   min-width: 250px;
   background-color: $steel-blue;
   border-radius: 15px;
   padding: 10px;
   color: $white;
+  z-index: 3;
 
   ul {
     padding: 0;
@@ -41,15 +43,54 @@ main, header, aside, footer {
   a {
     color: $white;
   }
+
+  @include md {
+    display: none;
+  }
 }
 
 .header {
   grid-area: hd;
+  display: flex;
   background-color: $steel-blue;
   color: $white;
   align-content: center;
+  align-items: center;
   text-align: center;
   border-radius: 15px;
+  font-size: 30px;
+}
+
+.application-name {
+  flex-grow: 1;
+}
+
+.hamburger-menu {
+  margin-right: 20px;
+  font-weight: 100;
+  font-size: 40px;
+  display: none;
+
+  @include md {
+    display: block;
+  }
+}
+
+.close-button {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 36px;
+  cursor: pointer;
+  border: none;
+  color: $white;
+  background-color: $steel-blue;
+  z-index: 4;
+
+  @include md {
+    display: block;
+  }
 }
 
 .main {
@@ -70,6 +111,38 @@ main, header, aside, footer {
 
   a {
     color: $white;
+  }
+}
+
+.layout-tooltip-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+
+  .layout-tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    padding: 7px;
+    border-radius: 3px;
+    z-index: 2;
+    color: $white;
+    background-color: $black-fade;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &:hover {
+    background-color: $science-blue;
+    border-radius: 10px;
+
+    .layout-tooltip {
+      opacity: 1;
+    }
   }
 }
 

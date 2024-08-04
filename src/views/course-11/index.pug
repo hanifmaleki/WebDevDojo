@@ -1,0 +1,11 @@
+extends ../layout.pug
+include mixin/video-preview
+
+block main
+    include header.pug
+    include sidebar.pug
+
+    div(class='c11-video-grid')
+        each video in youtubeData
+            +video-preview(video)
+    

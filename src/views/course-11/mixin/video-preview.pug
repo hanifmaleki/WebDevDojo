@@ -1,0 +1,18 @@
+mixin video-preview(video)
+    div(class='c11-video-preview')
+        div(class='c11-thumbnail-row')
+            img(class='c11-thumbnail', src=video.thumb)
+            div(class='c11-video-time') !{formatSeconds(video.duration)}
+
+        div(class='c11-video-info-grid')
+            div(class='c11-avatar-container')
+                img(class='c11-avatar-image', src=video.avatar)
+            
+            div(class='c11-video-info')
+
+                p(class='c11-video-title') !{video.title}
+
+                p(class='c11-video-author') !{video.author}
+
+                p(class='c11-video-stats') !{video.stats}
+

@@ -1,0 +1,18 @@
+mixin video-preview(video)
+    div(class='youtube-video-preview')
+        div(class='youtube-thumbnail-row')
+            img(class='youtube-thumbnail', src=video.thumb)
+            div(class='youtube-video-time') !{formatSeconds(video.duration)}
+
+        div(class='youtube-video-info-grid')
+            div(class='youtube-avatar-container')
+                img(class='youtube-avatar-image', src=video.avatar)
+            
+            div(class='youtube-video-info')
+
+                p(class='youtube-video-title') !{video.title}
+
+                p(class='youtube-video-author') !{video.author}
+
+                p(class='youtube-video-stats') !{video.stats}
+

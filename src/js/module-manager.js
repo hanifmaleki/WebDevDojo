@@ -54,6 +54,16 @@ function getModules() {
             name: 'Course-10 Youtube(7)',
             address: '/course-10/index.html',
             description: 'Adding Tooltips',
+        },
+        {
+            name: 'Course-11 Youtube(8)',
+            address: '/course-11/index.html',
+            description: 'Responsive styling',
+        },
+        {
+            name: 'Youtube',
+            address: '/youtube/index.html',
+            description: 'How it finally looks like',
         }
     ]
 }
